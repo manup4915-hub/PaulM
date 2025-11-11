@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CT Solution Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header id="hero">
+    <nav class="navbar">
+      <a href="#top" class="nav-logo">CT Solution Portal</a>
+      <ul class="nav-links">
+        <li><a href="#q1">Algorithm</a></li>
+        <li><a href="#q2">Python</a></li>
+        <li><a href="#q3">Libraries</a></li>
+        <li><a href="#q4">Comparison</a></li>
+        <li><a href="#q5">HTML</a></li>
+      </ul>
+    </nav>
+    <div class="hero-text">
+      <h1>Computational Thinking – Solutions</h1>
+      <p>Final Exam Project — Modified by PAUL MANU</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="q1" class="answer-card">
+  <h2>Algorithm Illustration</h2>
+  <button class="toggle-btn">Show Answer</button>
+  <div class="answer-content">
+    <p>In programming, an algorithm is a well-defined, step-by-step procedure or a set of instructions designed to solve a specific problem or accomplish a particular task. It acts as a blueprint for a program, outlining the logical sequence of operations the computer needs to perform.
+        Algorithms play a crucial role in various fields and have many applications. Some of the key areas where algorithms are used include:
+
+<strong>COMPUTER SCIENCE:</strong>
+ Algorithms form the basis of computer programming and are used to solve problems ranging from simple sorting and searching to complex tasks such as artificial intelligence and machine learning.
+<strong>MATHEMATICS:</strong>
+ Algorithms are used to solve mathematical problems, such as finding the optimal solution to a system of linear equations or finding the shortest path in a graph.
+<strong>OPERATIONS RESEARCH:</strong>
+ Algorithms are used to optimize and make decisions in fields such as transportation, logistics, and resource allocation.
+<strong>ARTIFICIAL INTELLIGENCE:</strong>
+ Algorithms are the foundation of artificial intelligence and machine learning, and are used to develop intelligent systems that can perform tasks such as image recognition, natural language processing, and decision-making.
+<strong>DATA SCIENCE:</strong>
+ Algorithms are used to analyze, process, and extract insights from large amounts of data in fields such as marketing, finance, and healthcare.
+        This algorithm determines the <strong>largest number</strong> among a set of inputs using conditional comparisons. It takes multiple values, checks them step by step, and outputs the largest one.</p>
+
+    <pre><code>
+INPUT A = 82, B = 98, C = 78, D = 60
+process:
+IF A > B AND A > C AND A > D THEN
+    largest ← A
+ELSE IF B > A AND B > C AND B > D THEN
+    largest ← B
+ELSE IF C > A AND C > B AND C > D THEN
+    largest ← C
+ELSE
+    largest ← D
+END IF
+OUTPUT: Display largest
+    </code></pre>
+
+    <figure class="algorithm-figure">
+      <img src="./The%20flowchart.png" alt="Algorithm flowchart showing the process of finding the largest number" class="flowchart">
+      <figcaption><em>Flowchart representation of the largest number algorithm. Example Input: 82, 98, 78, 60 → Output: 98</em></figcaption>
+    </figure>
+  </div>
+</section>
+
+    </section>
+
+   <section id="q2" class="answer-card">
+  <h2>Python Coding</h2>
+  <button class="toggle-btn">Show Answer</button>
+
+  <div class="answer-content">
+    <p>Python coding refers to the act of writing instructions for a computer using the Python programming language. Python is a high-level, general-purpose, and widely used programming language known for its readability and beginner-friendliness.
+        Benefits of Python include:
+
+Developers can easily read and understand a Python program because it has basic, English-like syntax. 
+Python makes developers more productive because they can write a Python program using fewer lines of code compared to many other languages.
+Python has a large standard library that contains reusable codes for almost any task. As a result, developers do not have to write code from scratch.
+Developers can easily use Python with other popular programming languages such as Java, C, and C++.
+The active Python community includes millions of supportive developers around the globe. If you face an issue, you can get quick support from the community.
+Plenty of helpful resources are available on the internet if you want to learn Python. For example, you can easily find videos, tutorials, documentation, and developer guides.
+Python is portable across different computer operating systems such as Windows, macOS, Linux, and Unix.
+
+        This program analyzes a list of numbers by computing the average, finding the maximum, and filtering out values below a certain threshold. The programming language-python is used in this format. Run this in your <strong>CODING TOOL</strong> to get better results.</p>
+    <div class="copy-container">
+      <button class="copy-btn">Copy Code</button>
+
+      <pre><code class="language-python"># Python Program – Number Analysis
+
+def main():
+    print("=== Number Analyzer ===")
+
+    STEP 1: collect exactly 5 numbers
+    numbers = []
+    for i in range(5):
+        while True:
+            try:
+                num = float(input(f"Enter number {i + 1}: "))
+                numbers.append(num)
+                break
+            except ValueError:
+                print("Invalid input. Please enter a valid number.")
+
+    STEP 2: display all numbers
+    print("\nNumbers entered:", numbers)
+
+    STEP 3: compute and display the average
+    average = sum(numbers) / len(numbers)
+    print(f"Average of numbers: {average:.2f}")
+
+    STEP 4: find and display the maximum
+    maximum = max(numbers)
+    print(f"Maximum number: {maximum}")
+
+    STEP 5: remove numbers less than 10
+    filtered_numbers = [num for num in numbers if num >= 10]
+    print("Updated list (numbers >= 10):", filtered_numbers)
+
+
+if __name__ == "__main__":
+    main()</code></pre>
+
+      <figure style="margin-top: 18px; text-align: center; background: #f9fafb; border-radius: 10px; border: 2px solid rgba(108, 186, 207, 0.151); padding: 10px;">
+        <img src="PythonDisplay.svg" alt="Flowchart of Python Program for Number Analysis" style="max-width: 100%; height: auto; border-radius: 6px;">
+        <figcaption style="font-size: 0.9rem; color: #555; margin-top: 6px;">
+          <strong>Figure 1:</strong> Flowchart illustrating the algorithm for the Python Number Analyzer program.
+        </figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<section id="q3" class="answer-card">
+  <h2>Theoretical Python Libraries</h2>
+  <button class="toggle-btn">Show Answer</button>
+
+  <div class="answer-content">
+   
+    <h3>1. PyPDF2</h3>
+    <p>
+      <b>Purpose:</b> PyPDF2 is a Python library used to read, modify, and
+      create PDF files. It allows developers to combine, split, rotate, or
+      extract pages and text from PDFs programmatically.
+    </p>
+    <p>
+      <b>Use Case:</b> In real projects, PyPDF2 can automate document
+      workflows — for instance, merging monthly invoices into a single annual
+      report and fixing rotated pages.
+    </p>
+    <pre><code>from PyPDF2 import PdfReader, PdfWriter
+
+def combine_pdfs(files, output="Annual_Report.pdf"):
+    writer = PdfWriter()
+    for pdf in files:
+        reader = PdfReader(pdf)
+        for page in reader.pages:
+            # Rotate landscape pages automatically
+            if page.mediabox.width > page.mediabox.height:
+                page.rotate(90)
+            writer.add_page(page)
+    with open(output, "wb") as out:
+        writer.write(out)
+
+# Example:
+# combine_pdfs(["Jan.pdf", "Feb.pdf", "Mar.pdf"])
+</code></pre>
+
+    <h3>2. Pandas</h3>
+    <p>
+      <b>Purpose:</b> Pandas is a high-level data analysis library that
+      organizes information into DataFrames (like Excel sheets) for easy
+      filtering, cleaning, and analysis. It’s essential for working with
+      structured data such as CSV, Excel, or SQL tables.
+    </p>
+    <p>
+      <b>Use Case:</b> It can analyze large datasets such as system
+      logs, user data, or business records to find insights quickly.
+    </p>
+    <pre><code>import pandas as pd
+
+def top_visitors(csv_path, n=5):
+    """
+    Finds the top N IP addresses with the most requests
+    from a web server log (CSV file).
+    """
+    df = pd.read_csv(csv_path)
+    top = (df.groupby("ip")
+             .size()
+             .reset_index(name="visits")
+             .sort_values("visits", ascending=False)
+             .head(n))
+    return top
+
+# Example:
+# print(top_visitors("server_logs.csv"))
+</code></pre>
+
+    <h3>3. os</h3>
+    <p>
+      <b>Purpose:</b> The <code>os</code> module allows Python to communicate
+      directly with your computer’s operating system. It manages files,
+      directories, environment variables, and paths, making your scripts more
+      system-aware and automated.
+    </p>
+    <p>
+      <b>Use Case:</b> Automating file backups or scanning folders for
+      specific file types.
+    </p>
+    <pre><code>import os, shutil
+from datetime import datetime
+
+def backup_python_files(src_folder):
+    """Copy all .py files from a source folder into a timestamped backup."""
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    backup_dir = f"backup_{timestamp}"
+    os.makedirs(backup_dir, exist_ok=True)
+
+    for root, dirs, files in os.walk(src_folder):
+        for file in files:
+            if file.endswith(".py"):
+                shutil.copy2(os.path.join(root, file), backup_dir)
+
+    print(f"Backup created at: {backup_dir}")
+
+# Example:
+# backup_python_files(".")
+</code></pre>
+  </div>
+</section>
+
+<section id="q4" class="answer-card">
+  <h2>Python vs Java Comparison</h2>
+  <button class="toggle-btn">Show Answer</button>
+
+  <div class="answer-content">
+    <p>
+      This section provides an in-depth comparison of <b>Python</b> and <b>Java</b>
+      based on syntax, execution model, typing system, common applications, and code examples.
+      Both languages are extremely powerful but serve slightly different purposes
+      in the software development ecosystem.
+    </p>
+
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Criteria</th>
+          <th>Python</th>
+          <th>Java</th>
+        </tr>
+      </thead>
+      <tbody>
+      
+        <tr>
+          <td><b>Syntax Complexity</b></td>
+          <td>
+            Python emphasizes <b>simplicity and readability</b>.
+            It uses indentation instead of curly braces and avoids unnecessary punctuation.
+            The syntax reads almost like natural English, allowing developers to write fewer lines of code.
+            <br><br>
+            <i>Advanced Note:</i> Python’s dynamic nature and concise syntax make it ideal for beginners
+            and data-driven applications, but the lack of explicit structure can make very large codebases harder to maintain.
+          </td>
+          <td>
+            Java syntax is <b>verbose and strongly structured</b>. Each piece of code must be enclosed in classes and methods,
+            using curly braces <code>{}</code> and semicolons. This increases code length but also enhances strictness and maintainability.
+            <br><br>
+            <i>Advanced Note:</i> Java’s verbosity enforces disciplined coding habits, which are beneficial for enterprise-scale systems
+            requiring large teams and long-term maintenance.
+          </td>
+        </tr>
+
+        <tr>
+          <td><b>Compilation and Execution</b></td>
+          <td>
+            Python is an <b>interpreted language</b>. The source code is translated into bytecode by the Python interpreter (like CPython)
+            at runtime. This makes development cycles faster since there’s no explicit compilation phase.
+            <br><br>
+            <i>Advanced Note:</i> While this makes Python slower for CPU-heavy tasks,
+            its interactive mode and dynamic execution make it excellent for prototyping, AI scripting, and automation.
+          </td>
+          <td>
+            Java is a <b>compiled-then-interpreted language</b>. The <code>javac</code> compiler converts source code into JVM bytecode,
+            which runs inside the Java Virtual Machine. The JVM uses Just-In-Time (JIT) compilation to optimize performance at runtime.
+            <br><br>
+            <i>Advanced Note:</i> This hybrid approach provides cross-platform compatibility and strong runtime optimization,
+            making Java preferred for high-performance, long-running applications like servers and Android apps.
+          </td>
+        </tr>
+
+        <tr>
+          <td><b>Type of Typing</b></td>
+          <td>
+            Python uses <b>dynamic typing</b>. Variables are created without declaring their data types,
+            and types are checked at runtime. This makes coding flexible but may allow type errors to go unnoticed until execution.
+            <br><br>
+            <i>Advanced Note:</i> Modern Python supports <b>type hints</b> via the <code>typing</code> module
+            to help developers and IDEs catch type mismatches early while still retaining flexibility.
+          </td>
+          <td>
+            Java uses <b>static typing</b>. Every variable and function must have a defined type before compilation.
+            The compiler checks all type constraints before the program runs.
+            <br><br>
+            <i>Advanced Note:</i> Static typing enhances performance and reduces runtime errors,
+            making Java reliable for mission-critical and large-scale enterprise projects.
+          </td>
+        </tr>
+
+        <tr>
+          <td><b>Common Use Cases</b></td>
+          <td>
+            <ul>
+              <li>Data Science, Machine Learning, and Artificial Intelligence</li>
+              <li>Automation and Cybersecurity tools</li>
+              <li>Web Development (Flask, Django, FastAPI)</li>
+              <li>Scripting, data visualization, and academic research</li>
+            </ul>
+            <i>Advanced Note:</i> Python’s ecosystem (NumPy, pandas, TensorFlow) makes it the top choice
+            for innovation, analytics, and quick deployment projects.
+          </td>
+          <td>
+            <ul>
+              <li>Enterprise applications and backend systems</li>
+              <li>Android app development using the Android SDK</li>
+              <li>Large-scale APIs and web servers (Spring, Hibernate)</li>
+              <li>Financial, insurance, and e-commerce systems</li>
+            </ul>
+            <i>Advanced Note:</i> Java’s architecture-neutral JVM and object-oriented design
+            make it a long-term solution for secure, scalable business environments.
+          </td>
+        </tr>
+
+        <tr>
+          <td><b>Code Example: Printing "Hello World"</b></td>
+          <td>
+            <pre><code># Python Example
+# Simple and direct, no class needed
+print("Hello World")
+
+# Advanced: function-based
+def greet():
+    print("Hello World from Python")
+
+greet()
+</code></pre>
+          </td>
+          <td>
+            <pre><code>// Java Example
+// Must define a class and method
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+
+// Advanced: method overloading
+public class Greeter {
+    public static void greet(String name) {
+        System.out.println("Hello " + name + "!");
+    }
+
+    public static void main(String[] args) {
+        greet("World from Java");
+    }
+}
+</code></pre>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:1rem;">
+      <b>Conclusion:</b>  
+      Python is favored for its simplicity, adaptability, and rapid prototyping,
+      while Java remains dominant for performance, stability, and large-scale enterprise solutions.
+      Both languages complement each other in modern software ecosystems.
+    </p>
+  </div>
+</section>
+
+<section id="q5" class="answer-card">
+  <h2>Basic HTML</h2>
+  <button class="toggle-btn">Show Answer</button>
+
+  <div class="answer-content">
+    <p>
+        HTML is the abbreviation for Hyper Text Markup Language. It’s a markup language and is used to construct web pages. HTML is a markup language that integrates hypertext & markup. The term “hypertext” refers to the connection between online pages. The text document within the tags that specifies the structure of web pages is produced using a markup language. This language is used to annotate (add notes to) text so that a computer can comprehend it and alter it appropriately. The majority of markup languages (such as HTML) are understandable by humans. Tags are used in the language to specify what type of text processing is required.
+      The following example demonstrates a creative and structured HTML webpage.
+      It features a modern design, semantic tags, and an interactive live preview
+      that automatically resizes to match the content height.
+    </p>
+
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Welcome to Computational Thinking&lt;/title&gt;
+  &lt;style&gt;
+    body {
+      background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+      font-family: "Segoe UI", sans-serif;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #c9a227;
+      font-size: 2.5em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.1em;
+      max-width: 650px;
+      margin: 0 auto 25px;
+      line-height: 1.6;
+    }
+    ul {
+      list-style-type: square;
+      display: inline-block;
+      text-align: left;
+      margin: 20px auto;
+      padding: 0;
+    }
+    ul li {
+      margin: 10px 0;
+      font-size: 1.05em;
+    }
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 18px;
+      background-color: #c9a227;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s ease;
+    }
+    a:hover {
+      background-color: #b48d1c;
+      transform: scale(1.05);
+    }
+    footer {
+      margin-top: 35px;
+      font-size: 0.9em;
+      color: #555;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Welcome to Computational Thinking&lt;/h1&gt;
+  &lt;p&gt;
+    Learning programming enhances problem-solving skills, logical thinking,
+    and creativity. It empowers innovators to build intelligent digital solutions
+    that shape the modern world.
+  &lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Python – AI, Data Science &amp; Automation&lt;/li&gt;
+    &lt;li&gt;JavaScript – Dynamic Web Development&lt;/li&gt;
+    &lt;li&gt;C++ – Game &amp; Systems Programming&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;a href="https://www.python.org" target="_blank"&gt;Visit Python.org&lt;/a&gt;
+  &lt;footer&gt;&amp;copy; 2025 Computational Thinking Lab&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+    <h3 style="margin-top:2rem;">Live Preview:</h3>
+    <iframe
+      id="preview-q5"
+      srcdoc='
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Computational Thinking</title>
+          <style>
+            body {
+              background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+              font-family: "Segoe UI", sans-serif;
+              color: #333;
+              text-align: center;
+              padding: 50px;
+            }
+            h1 {
+              color: #c9a227;
+              font-size: 2.5em;
+              text-transform: uppercase;
+              margin-bottom: 20px;
+            }
+            p {
+              font-size: 1.1em;
+              max-width: 650px;
+              margin: 0 auto 25px;
+              line-height: 1.6;
+            }
+            ul {
+              list-style-type: square;
+              display: inline-block;
+              text-align: left;
+              margin: 20px auto;
+              padding: 0;
+            }
+            ul li {
+              margin: 10px 0;
+              font-size: 1.05em;
+            }
+            a {
+              display: inline-block;
+              margin-top: 25px;
+              padding: 10px 18px;
+              background-color: #c9a227;
+              color: white;
+              text-decoration: none;
+              border-radius: 6px;
+              transition: 0.3s ease;
+            }
+            a:hover {
+              background-color: #b48d1c;
+              transform: scale(1.05);
+            }
+            footer {
+              margin-top: 35px;
+              font-size: 0.9em;
+              color: #555;
+            }
+          </style>
+        </head>
+        <body>
+          <h1>Welcome to Computational Thinking</h1>
+          <p>Learning programming enhances problem-solving skills, logical thinking,
+          and creativity. It empowers innovators to build intelligent digital
+          solutions that shape the modern world.</p>
+          <ul>
+            <li>Python – AI, Data Science & Automation</li>
+            <li>JavaScript – Dynamic Web Development</li>
+            <li>C++ – Game & Systems Programming</li>
+          </ul>
+          <a href="https://www.python.org" target="_blank">Visit Python.org</a>
+          <footer>&copy; 2025 Computational Thinking Lab</footer>
+        </body>
+        </html>'
+      width="100%"
+      style="border:1px solid #ccc; border-radius:10px; margin-top:10px;"
+    ></iframe>
+
+    <script>
+      const iframe = document.getElementById("preview-q5");
+      iframe.addEventListener("load", function() {
+        const doc = iframe.contentDocument || iframe.contentWindow.document;
+        const adjustHeight = () => {
+          iframe.style.height = doc.body.scrollHeight + 30 + "px";
+        };
+        adjustHeight();
+        new ResizeObserver(adjustHeight).observe(doc.body);
+      });
+    </script>
+  </div>
+</section>
+
+
+  </main>
+  <footer>
+    <p>© 2025 CT Final Solution Portal | Generated by PAUL MANU</p>
+  </footer>
+</body>
+</html>
